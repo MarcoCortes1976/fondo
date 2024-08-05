@@ -95,7 +95,13 @@ else:
                 k += 1
 
     with tab_2:
-        st.header('Formulario para la solicitud de un prestamo')
+        st.header('Carta para la solicitud de un prestamo.')
+        if st.button('Imprimir carta'):
+            with st.spinner('Buscando carta...'):
+                Funciones.carta_para_solicitud_de_prestamo()
+        st.divider()
+
+        st.header('Formulario para la solicitud de un prestamo.')
         valor_de_el_prestamo = st.number_input('Dinero a retirar.', value=0, step=1)
 
         st.divider()

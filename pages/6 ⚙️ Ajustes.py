@@ -359,10 +359,24 @@ else:
             st.subheader('Enlace de el repositorio')
 
             st.write(f'Enlace actual: {ajustes['enlace repo']}')
-            n_tablas_g = st.text_input('Nuevo enlace.', value=0, step=1)
+            n_enlace = st.text_input('Nuevo enlace.')
 
             if st.button('Modificar', key='00018'):
-                ajustes['enlace repo'] = n_tablas_g
+                ajustes['enlace repo'] = n_enlace
+                with open('ajustes.json', 'w') as f:
+                    json.dump(ajustes, f)
+                    f.close()
+
+                st.success('Valor modificado.', icon="✅")
+                st.rerun()
+
+            st.subheader('Commits hechos')
+
+            st.write(f'Commits realizados: {ajustes['commits hechos']}')
+            n_comits = st.number_input('Nuevos commits.', value=0, step=1)
+
+            if st.button('Modificar', key='00019'):
+                ajustes['commits hechos'] = n_comits
                 with open('ajustes.json', 'w') as f:
                     json.dump(ajustes, f)
                     f.close()

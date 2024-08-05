@@ -50,7 +50,7 @@ with tab_1:
                 ahora = datetime.datetime.now()
                 fecha_hora_str = ahora.strftime("%Y-%m-%d_%H:%M:%S")
                 ajustes['commits hechos'] += 1
-                mensaje_de_comit = f'{ajustes['commits hechos']}_{fecha_hora_str}'
+                mensaje_de_comit = f'{str(ajustes['commits hechos'])}_{fecha_hora_str}'
                 Funciones.ejecutar_comando_git(["git", "commit", "-m", mensaje_de_comit])
                 with open('ajustes.json', 'w') as f:
                     json.dump(ajustes, f)
@@ -63,18 +63,6 @@ with tab_1:
                     label="Los datos han sido cargados!", state="complete", expanded=False
                 )
         st.link_button('🔗 Abrir GitHub', ajustes['enlace repo'])
-
-        st.divider()
-        n_token = st.text_input('Nuevo token de conexion.')
-
-        if st.button('Cargar nuevo token'):
-            ajustes['token'] = n_token
-            with open('ajustes.json', 'w') as f:
-                json.dump(ajustes, f)
-                f.close()
-
-            st.success('Valor modificado.', icon="✅")
-            st.rerun()
 
     with c_2:
         st.header('Que es el menu?')
