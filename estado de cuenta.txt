@@ -1,19 +1,19 @@
 ============================== Fondo San Javier ==============================
 
-     № 0: Willian Avila - 15 puesto(s)
+     № 2: Lorena Zamora - 2 puesto(s)
 
-los siguientes datos son validos para la fecha "2024/09/29 11:57" para otras
+los siguientes datos son validos para la fecha "2024/09/30 19:30" para otras
 fechas no se confirma su veracidad.
 
 Pago de cuotas:
-- Cuotas pagas: 0
-- Cuotas que se deben: 39
+- Cuotas pagas: 40
+- Cuotas que se deben: 0
 - Multas pendientes: 0
 - Estado: activo
-- Capital: 0
+- Capital: 800,000
 - Dinero pagado en multas: 0
 - Multas extra: 0 
-- Numero de telefono: _
+- Numero de telefono: 3214818413
 
 Prestamos:
 - Prestamos solitados: 0
