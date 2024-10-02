@@ -213,7 +213,6 @@ else:
                     )
 
             case "estado":
-                st.divider()
                 n_estado = df["estado"][m_index_usuario]
                 st.write(
                     f"Estado: {n_estado}"

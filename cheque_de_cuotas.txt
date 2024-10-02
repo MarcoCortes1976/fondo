@@ -1,0 +1,23 @@
+===========================
+=                         =
+=    FONDO SAN JAVIER     =
+=                         =
+===========================
+> Nombre:Desar Ortiz
+> Numero:118
+> Puestos:10
+===========================
+> Multas pagadas:7
+> Valor multa:3,000
+> TOTAL multas:210,000
+===========================
+> Cuotas pagadas:0
+> Valor cuota:10,000
+> TOTAL cuotas:0
+===========================
+> Tesorero:1
+> Total pagado:210,000
+===========================
+> Fecha:2024.10.02
+> Hora:16:48
+===========================
