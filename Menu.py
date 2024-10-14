@@ -50,9 +50,9 @@ with tab_1:
 
                 st.write('Guardando cambios...')
                 ahora = datetime.datetime.now()
-                fecha_hora_str = ahora.strftime("%Y-%m-%d_%H:%M:%S")
+                fecha_hora_str = ahora.strftime("%Y/%m/%d %H:%M:%S")
                 ajustes['commits hechos'] += 1
-                mensaje_de_comit = f'{str(ajustes['commits hechos'])}_{fecha_hora_str}'
+                mensaje_de_comit = f'{str(ajustes['commits hechos'])} {fecha_hora_str}'
                 Funciones.ejecutar_comando_git(["git", "commit", "-m", mensaje_de_comit])
                 with open('ajustes.json', 'w') as f:
                     json.dump(ajustes, f)
