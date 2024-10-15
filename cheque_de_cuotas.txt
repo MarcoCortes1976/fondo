@@ -3,21 +3,21 @@
 =    FONDO SAN JAVIER     =
 =                         =
 ===========================
-> Nombre:Maria Lopez
-> Numero:17
-> Puestos:5
+> Nombre:Ricardo Zamora
+> Numero:1
+> Puestos:10
 ===========================
-> Multas pagadas:0
+> Multas pagadas:1
 > Valor multa:3,000
-> TOTAL multas:0
+> TOTAL multas:30,000
 ===========================
-> Cuotas pagadas:2
+> Cuotas pagadas:0
 > Valor cuota:10,000
-> TOTAL cuotas:100,000
+> TOTAL cuotas:0
 ===========================
 > Tesorero:1
-> Total pagado:100,000
+> Total pagado:30,000
 ===========================
 > Fecha:2024.10.14
-> Hora:11:10
+> Hora:20:19
 ===========================

@@ -3,8 +3,6 @@ import pandas as pd
 import Funciones
 import json
 
-from Funciones import crear_tablas_talonarios
-
 st.set_page_config(layout="wide")
 
 st.session_state['preguntar clave'] = True
@@ -71,7 +69,7 @@ else:
                 st.subheader('🚨 No se han entregado talonarios,', key='00041')
             else:
                 talonarios_r_1 = boletas_r_1.split('-')
-                tablas_r_1 = crear_tablas_talonarios(boletas_r_1)
+                tablas_r_1 = Funciones.crear_tablas_talonarios(boletas_r_1)
                 for i in range(len(talonarios_r_1)):
                     st.subheader(f'Talonario {i + 1}:')
                     st.table(tablas_r_1[i])
@@ -114,7 +112,7 @@ else:
                 st.subheader('🚨 No se han entregado talonarios,')
             else:
                 talonarios_r_2 = boletas_r_2.split('-')
-                tablas_r_2 = crear_tablas_talonarios(boletas_r_2)
+                tablas_r_2 = Funciones.crear_tablas_talonarios(boletas_r_2)
                 for i in range(len(talonarios_r_2)):
                     st.subheader(f'Talonario {i + 1}:')
                     st.table(tablas_r_2[i])
@@ -157,7 +155,7 @@ else:
                 st.subheader('🚨 No se han entregado talonarios,')
             else:
                 talonarios_r_3 = boletas_r_3.split('-')
-                tablas_r_3 = crear_tablas_talonarios(boletas_r_3)
+                tablas_r_3 = Funciones.crear_tablas_talonarios(boletas_r_3)
                 for i in range(len(talonarios_r_3)):
                     st.subheader(f'Talonario {i + 1}:')
                     st.table(tablas_r_3[i])
@@ -200,7 +198,7 @@ else:
                 st.subheader('🚨 No se han entregado talonarios,')
             else:
                 talonarios_r_4 = boletas_r_4.split('-')
-                tablas_r_4 = crear_tablas_talonarios(boletas_r_4)
+                tablas_r_4 = Funciones.crear_tablas_talonarios(boletas_r_4)
                 for i in range(len(talonarios_r_4)):
                     st.subheader(f'Talonario {i + 1}:')
                     st.table(tablas_r_4[i])
